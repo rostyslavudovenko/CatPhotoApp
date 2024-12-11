@@ -1,60 +1,84 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CatPhotoApp</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <main>
-      <h1>CatPhotoApp</h1>
-      <section>
-        <h2>Cat Photos</h2>
-        <p>
-          Everyone loves <a href="img/running-cats.jpg">cute cats</a> online!
+    <header class="header">
+      <h1 class="header__title">CatPhotoApp</h1>
+    </header>
+    <main class="main">
+      <section class="section section--photos">
+        <h2 class="section__title">Cat Photos</h2>
+        <p class="section__text">
+          Everyone loves
+          <a href="img/running-cats.jpg" class="link">cute cats</a> online!
         </p>
-        <p>
+        <p class="section__text">
           See more
-          <a target="_blank" href="https://freecatphotoapp.com">cat photos</a>
+          <a target="_blank" href="https://freecatphotoapp.com" class="link"
+            >cat photos</a
+          >
           in our gallery.
         </p>
-        <a href="https://freecatphotoapp.com"
-          ><img
+        <a href="https://freecatphotoapp.com" class="section__image-link">
+          <img
             src="img/relaxing-cat.jpg"
             alt="A cute orange cat lying on its back."
-        /></a>
+            class="section__image"
+          />
+        </a>
       </section>
-      <section>
-        <h2>Cat Lists</h2>
-        <h3>Things cats love:</h3>
-        <ul>
-          <li>cat nip</li>
-          <li>laser pointers</li>
-          <li>lasagna</li>
+      <section class="section section--lists">
+        <h2 class="section__title">Cat Lists</h2>
+        <h3 class="section__subtitle">Things cats love:</h3>
+        <ul class="list">
+          <li class="list__item">cat nip</li>
+          <li class="list__item">laser pointers</li>
+          <li class="list__item">lasagna</li>
         </ul>
-        <figure>
-          <img src="img/lasagna.jpg" alt="A slice of lasagna on a plate." />
-          <figcaption>Cats <em>love</em> lasagna.</figcaption>
+        <figure class="figure">
+          <img
+            src="img/lasagna.jpg"
+            alt="A slice of lasagna on a plate."
+            class="figure__image"
+          />
+          <figcaption class="figure__caption">
+            Cats <em>love</em> lasagna.
+          </figcaption>
         </figure>
-        <h3>Top 3 things cats hate:</h3>
-        <ol>
-          <li>flea treatment</li>
-          <li>thunder</li>
-          <li>other cats</li>
+        <h3 class="section__subtitle">Top 3 things cats hate:</h3>
+        <ol class="list">
+          <li class="list__item">flea treatment</li>
+          <li class="list__item">thunder</li>
+          <li class="list__item">other cats</li>
         </ol>
-        <figure>
-          <img src="img/cats.jpg" alt="Five cats looking around a field." />
-          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+        <figure class="figure">
+          <img
+            src="img/cats.jpg"
+            alt="Five cats looking around a field."
+            class="figure__image"
+          />
+          <figcaption class="figure__caption">
+            Cats <strong>hate</strong> other cats.
+          </figcaption>
         </figure>
       </section>
-      <section>
-        <h2>Cat Form</h2>
-        <form action="https://freecatphotoapp.com/submit-cat-photo">
-          <fieldset>
-            <legend>Is your cat an indoor or outdoor cat?</legend>
+      <section class="section section--form">
+        <h2 class="section__title">Cat Form</h2>
+        <form
+          action="https://freecatphotoapp.com/submit-cat-photo"
+          class="form"
+        >
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">
+              Is your cat an indoor or outdoor cat?
+            </legend>
             <label
               ><input
-                id="indoor"
                 type="radio"
                 name="indoor-outdoor"
                 value="indoor"
@@ -63,49 +87,45 @@
               Indoor</label
             >
             <label
-              ><input
-                id="outdoor"
-                type="radio"
-                name="indoor-outdoor"
-                value="outdoor"
-              />
+              ><input type="radio" name="indoor-outdoor" value="outdoor" />
               Outdoor</label
             >
           </fieldset>
-          <fieldset>
-            <legend>What's your cat's personality?</legend>
-            <input
-              id="loving"
-              type="checkbox"
-              name="personality"
-              value="loving"
-              checked
-            />
-            <label for="loving">Loving</label>
-            <input id="lazy" type="checkbox" name="personality" value="lazy" />
-            <label for="lazy">Lazy</label>
-            <input
-              id="energetic"
-              type="checkbox"
-              name="personality"
-              value="energetic"
-            />
-            <label for="energetic">Energetic</label>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">What's your cat's personality?</legend>
+            <label
+              ><input
+                type="checkbox"
+                name="personality"
+                value="loving"
+                checked
+              />
+              Loving</label
+            >
+            <label
+              ><input type="checkbox" name="personality" value="lazy" />
+              Lazy</label
+            >
+            <label
+              ><input type="checkbox" name="personality" value="energetic" />
+              Energetic</label
+            >
           </fieldset>
           <input
             type="text"
             name="catphotourl"
             placeholder="cat photo URL"
             required
+            class="form__input"
           />
-          <button type="submit">Submit</button>
+          <button type="submit" class="form__button">Submit</button>
         </form>
       </section>
     </main>
-    <footer>
-      <p>
+    <footer class="footer">
+      <p class="footer__text">
         No Copyright -
-        <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+        <a href="https://www.freecodecamp.org" class="link">freeCodeCamp.org</a>
       </p>
     </footer>
   </body>
